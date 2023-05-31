@@ -9,9 +9,15 @@
 
 ###
 
-<img align="right" height="150" src="https://media.tenor.com/Fk57yabSTC0AAAAC/captain-america-salute.gif"  />
+&nbsp;
+
+<div>
+  <img style = "display:block;" align="right" height="150" src="https://media.tenor.com/Fk57yabSTC0AAAAC/captain-america-salute.gif"  />
+</div>
 
 ###
+
+## Tools and Technologies
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="30" width="42" alt="flutter logo"  />
@@ -26,6 +32,8 @@
 </div>
 
 ###
+
+## Connect with me
 
 <div align="left">
   <a href="discordapp.com/users/744599283243810856" target="_blank">
@@ -43,6 +51,6 @@
 
 <br clear="both">
 
-<img align="center" src="https://raw.githubusercontent.com/soham-1902/soham-1902/output/snake.svg" alt="Snake animation" />
-
-###
+<p align="center">
+<img src="https://raw.githubusercontent.com/soham-1902/soham-1902/output/snake.svg" alt="Snake animation" />
+</p>
