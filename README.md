@@ -12,7 +12,7 @@
 &nbsp;
 
 <div>
-  <img style = "display:block;" align="right" height="150" src="https://media.tenor.com/Fk57yabSTC0AAAAC/captain-america-salute.gif"  />
+  <img style = "display:block;" align="right" height="300" src="https://media.tenor.com/Fk57yabSTC0AAAAC/captain-america-salute.gif"  />
 </div>
 
 ###
