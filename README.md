@@ -1,4 +1,4 @@
-<h2 align="center">Hi 👋! My name is Soham and I'm an aspiring software developer from Pune🚀</h2>
+<h2 align="center">Hi 👋! My name is Soham and I'm an Aspiring Software Developer from Pune🚀</h2>
 
 ###
 
