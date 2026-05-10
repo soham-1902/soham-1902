@@ -1,0 +1,165 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes fadeSlideUp{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes scan{0%{transform:translateY(-80px)}100%{transform:translateY(380px)}}
+@keyframes orb{0%,100%{opacity:.04}50%{opacity:.11}}
+@keyframes dash{to{stroke-dashoffset:-20}}
+.a1{animation:fadeSlideUp .6s ease .1s both}
+.a2{animation:fadeSlideUp .6s ease .35s both}
+.a3{animation:fadeSlideUp .6s ease .6s both}
+.a4{animation:fadeSlideUp .6s ease .85s both}
+.a5{animation:fadeSlideUp .6s ease 1.1s both}
+.a6{animation:fadeSlideUp .6s ease 1.35s both}
+.a7{animation:fadeSlideUp .6s ease 1.55s both}
+.cur{animation:blink 1.05s steps(1) infinite}
+.orb{animation:orb 4s ease-in-out infinite}
+.scan-line{animation:scan 6s linear infinite}
+.dash{stroke-dasharray:4 4;animation:dash 1s linear infinite}
+</style>
+<filter id="glow">
+<feGaussianBlur stdDeviation="5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="glow2">
+<feGaussianBlur stdDeviation="12" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#ffffff"/>
+<stop offset="55%" stop-color="#a8d8e8"/>
+<stop offset="100%" stop-color="#00ffe0"/>
+</linearGradient>
+<linearGradient id="fade-r" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="50%" stop-color="#050c18" stop-opacity="0"/>
+<stop offset="100%" stop-color="#050c18" stop-opacity="1"/>
+</linearGradient>
+<linearGradient id="scan-g" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#00ffe0" stop-opacity="0"/>
+<stop offset="50%" stop-color="#00ffe0" stop-opacity=".05"/>
+<stop offset="100%" stop-color="#00ffe0" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="cp">
+<rect width="900" height="300"/>
+</clipPath>
+</defs>
+
+<rect width="900" height="300" fill="#050c18"/>
+
+<g clip-path="url(#cp)">
+
+<!-- grid -->
+<g stroke="#0a1e30" stroke-width=".5" opacity=".8">
+<line x1="0" y1="50" x2="900" y2="50"/>
+<line x1="0" y1="100" x2="900" y2="100"/>
+<line x1="0" y1="150" x2="900" y2="150"/>
+<line x1="0" y1="200" x2="900" y2="200"/>
+<line x1="0" y1="250" x2="900" y2="250"/>
+<line x1="0" y1="300" x2="900" y2="300"/>
+<line x1="90" y1="0" x2="90" y2="300"/>
+<line x1="180" y1="0" x2="180" y2="300"/>
+<line x1="270" y1="0" x2="270" y2="300"/>
+<line x1="360" y1="0" x2="360" y2="300"/>
+<line x1="450" y1="0" x2="450" y2="300"/>
+<line x1="540" y1="0" x2="540" y2="300"/>
+<line x1="630" y1="0" x2="630" y2="300"/>
+<line x1="720" y1="0" x2="720" y2="300"/>
+<line x1="810" y1="0" x2="810" y2="300"/>
+</g>
+
+<!-- scan line -->
+<rect class="scan-line" width="900" height="80" fill="url(#scan-g)" y="-80"/>
+
+<!-- right glow orb -->
+<ellipse class="orb" cx="790" cy="150" rx="160" ry="130" fill="#00ffe0" filter="url(#glow2)"/>
+
+<!-- left accent bar -->
+<rect class="a1" x="38" y="56" width="3" height="144" fill="#00ffe0" opacity=".9" filter="url(#glow)"/>
+
+<!-- corner brackets -->
+<g stroke="#00ffe0" stroke-width="1.2" fill="none" opacity=".35">
+<polyline points="12,12 12,4 22,4"/>
+<polyline points="878,4 888,4 888,12"/>
+<polyline points="12,288 12,296 22,296"/>
+<polyline points="878,296 888,296 888,288"/>
+</g>
+
+<!-- top meta -->
+<text class="a1" x="52" y="70" font-family="'Courier New',monospace" font-size="10" fill="#1a4a5e" letter-spacing="3">// SOHAM.AI · IDENTITY LOADED · v3.0</text>
+<text class="a1" x="820" y="20" font-family="'Courier New',monospace" font-size="9" fill="#1a3a4a" letter-spacing="2" text-anchor="middle">PUNE · INDIA</text>
+
+<!-- SOHAM large -->
+<text class="a2" x="52" y="170" font-family="'Arial Black','Impact',sans-serif" font-size="100" font-weight="900" fill="url(#ng)" letter-spacing="-4">SOHAM</text>
+
+<!-- PANDE large -->
+<text class="a3" x="52" y="242" font-family="'Arial Black','Impact',sans-serif" font-size="100" font-weight="900" fill="url(#ng)" letter-spacing="-4" opacity=".25">PANDE</text>
+
+<!-- right fade mask -->
+<rect x="420" y="0" width="480" height="300" fill="url(#fade-r)"/>
+
+<!-- divider line animated -->
+<line class="a4" x1="52" y1="256" x2="500" y2="256" stroke="#00ffe0" stroke-width=".6" opacity=".3"/>
+
+<!-- title -->
+<text class="a5" x="52" y="272" font-family="'Courier New',monospace" font-size="12" fill="#00ffe0" letter-spacing="3.5">AI ENGINEER  ·  ML PRACTITIONER  ·  BUILDER</text>
+
+<!-- terminal line -->
+<text class="a6" x="52" y="291" font-family="'Courier New',monospace" font-size="10.5" fill="#1e4a5a" letter-spacing="1">&gt; building agents that think, flutter apps that ship, models that matter</text>
+<rect class="a7 cur" x="490" y="280" width="7" height="12" fill="#00ffe0"/>
+
+<!-- dot matrix right -->
+<g class="a4" opacity=".7">
+<circle cx="648" cy="80" r="2.2" fill="#00ffe0"/>
+<circle cx="672" cy="80" r="2.2" fill="#00ffe0"/>
+<circle cx="696" cy="80" r="2.2" fill="#0a2a2a"/>
+<circle cx="720" cy="80" r="2.2" fill="#0a2a2a"/>
+<circle cx="744" cy="80" r="2.2" fill="#0a2a2a"/>
+<circle cx="648" cy="104" r="2.2" fill="#00ffe0"/>
+<circle cx="672" cy="104" r="2.2" fill="#00ffe0"/>
+<circle cx="696" cy="104" r="2.2" fill="#00ffe0"/>
+<circle cx="720" cy="104" r="2.2" fill="#0a2a2a"/>
+<circle cx="744" cy="104" r="2.2" fill="#0a2a2a"/>
+<circle cx="648" cy="128" r="2.2" fill="#00ffe0"/>
+<circle cx="672" cy="128" r="2.2" fill="#00ffe0"/>
+<circle cx="696" cy="128" r="2.2" fill="#00ffe0"/>
+<circle cx="720" cy="128" r="2.2" fill="#00ffe0"/>
+<circle cx="744" cy="128" r="2.2" fill="#0a2a2a"/>
+<circle cx="648" cy="152" r="2.2" fill="#00ffe0"/>
+<circle cx="672" cy="152" r="2.2" fill="#00ffe0"/>
+<circle cx="696" cy="152" r="2.2" fill="#00ffe0"/>
+<circle cx="720" cy="152" r="2.2" fill="#00ffe0"/>
+<circle cx="744" cy="152" r="2.2" fill="#00ffe0"/>
+<circle cx="648" cy="176" r="2.2" fill="#00ffe0"/>
+<circle cx="672" cy="176" r="2.2" fill="#00ffe0"/>
+<circle cx="696" cy="176" r="2.2" fill="#00ffe0"/>
+<circle cx="720" cy="176" r="2.2" fill="#00ffe0"/>
+<circle cx="744" cy="176" r="2.2" fill="#00ffe0"/>
+</g>
+
+<!-- dashed circuit lines -->
+<g class="a5" stroke="#00ffe0" stroke-width=".5" fill="none" opacity=".2">
+<path class="dash" d="M648,176 L648,220 L700,220"/>
+<path class="dash" d="M744,128 L800,128 L800,80"/>
+<circle cx="700" cy="220" r="3" fill="#00ffe0" opacity=".4"/>
+<circle cx="800" cy="80" r="3" fill="#00ffe0" opacity=".4"/>
+</g>
+
+<!-- tags -->
+<g class="a6">
+<rect x="640" y="210" width="98" height="19" rx="2" fill="none" stroke="#00ffe0" stroke-width=".5" opacity=".4"/>
+<text x="650" y="223" font-family="'Courier New',monospace" font-size="9.5" fill="#00ffe0" letter-spacing="1">LLMs · Agents</text>
+<rect x="746" y="210" width="84" height="19" rx="2" fill="none" stroke="#00ffe0" stroke-width=".5" opacity=".4"/>
+<text x="756" y="223" font-family="'Courier New',monospace" font-size="9.5" fill="#00ffe0" letter-spacing="1">RAG Systems</text>
+</g>
+<g class="a7">
+<rect x="640" y="236" width="60" height="19" rx="2" fill="none" stroke="#00ffe0" stroke-width=".5" opacity=".4"/>
+<text x="650" y="249" font-family="'Courier New',monospace" font-size="9.5" fill="#00ffe0" letter-spacing="1">Flutter</text>
+<rect x="708" y="236" width="62" height="19" rx="2" fill="none" stroke="#00ffe0" stroke-width=".5" opacity=".4"/>
+<text x="718" y="249" font-family="'Courier New',monospace" font-size="9.5" fill="#00ffe0" letter-spacing="1">PyTorch</text>
+<rect x="778" y="236" width="60" height="19" rx="2" fill="none" stroke="#00ffe0" stroke-width=".5" opacity=".4"/>
+<text x="788" y="249" font-family="'Courier New',monospace" font-size="9.5" fill="#00ffe0" letter-spacing="1">FastAPI</text>
+</g>
+
+</g>
+</svg>
