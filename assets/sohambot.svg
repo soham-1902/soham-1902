@@ -26,9 +26,9 @@
 </defs>
 
 <rect x="0.5" y="0.5" width="899" height="379" rx="16" fill="#0D0D0D" stroke="#1C1C1C"/>
-<circle cx="28" cy="30" r="5.5" fill="#2E2E2E"/>
-<circle cx="48" cy="30" r="5.5" fill="#2E2E2E"/>
-<circle cx="68" cy="30" r="5.5" fill="#2E2E2E"/>
+<circle cx="28" cy="30" r="5.5" fill="#FF5F57"/>
+<circle cx="48" cy="30" r="5.5" fill="#FEBC2E"/>
+<circle cx="68" cy="30" r="5.5" fill="#28C840"/>
 <text class="mono" x="450" y="34" text-anchor="middle" font-size="12" fill="#525252">sohambot — live session</text>
 <line x1="0" y1="56" x2="900" y2="56" stroke="#1A1A1A"/>
 
