@@ -1,0 +1,43 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soham Pande — Tech Enthusiast, Pune, India">
+<defs>
+<radialGradient id="glow" cx="0.18" cy="0.1" r="0.9">
+  <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.07"/>
+  <stop offset="60%" stop-color="#5EEAD4" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="card"><rect x="0.5" y="0.5" width="899" height="239" rx="16"/></clipPath>
+<style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Liberation Mono',monospace}
+  @keyframes up{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+  @keyframes fade{0%{opacity:0}100%{opacity:1}}
+  @keyframes draw{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+  .e1{animation:fade .8s ease .15s both}
+  .e2{animation:up .9s cubic-bezier(.2,.7,.2,1) .35s both}
+  .e3{animation:draw 1s cubic-bezier(.2,.7,.2,1) .95s both;transform-origin:48px 0}
+  .e4{animation:up .8s cubic-bezier(.2,.7,.2,1) .7s both}
+  .e5{animation:fade 1s ease 1.2s both}
+</style>
+</defs>
+
+<rect x="0.5" y="0.5" width="899" height="239" rx="16" fill="#0A0A0A" stroke="#1C1C1C"/>
+<g clip-path="url(#card)">
+  <rect x="0" y="0" width="900" height="240" fill="url(#glow)"/>
+</g>
+
+<text class="sans e1" x="48" y="76" font-size="11" letter-spacing="3.5" fill="#5C5C5C">TECH ENTHUSIAST — PUNE, INDIA</text>
+
+<text class="sans e2" x="46" y="138" font-size="54" font-weight="650" letter-spacing="-1.5" fill="#F4F4F4">Soham Pande</text>
+
+<rect class="e3" x="48" y="156" width="120" height="2" rx="1" fill="#5EEAD4"/>
+
+<text class="sans e4" x="48" y="196" font-size="16" fill="#8A8A8A">Always learning, always building something new.</text>
+
+<g class="e5">
+  <circle cx="702" cy="72" r="4" fill="#5EEAD4"/>
+  <circle cx="702" cy="72" r="4" fill="none" stroke="#5EEAD4" stroke-width="1.5">
+    <animate attributeName="r" values="4;13" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text class="sans" x="716" y="76" font-size="10.5" letter-spacing="2.5" fill="#5EEAD4">OPEN TO COLLABS</text>
+</g>
+</svg>

@@ -19,7 +19,7 @@ jobs:
           github_user_name: soham-1902
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/snake.svg?color_snake=#00ffe0&color_dots=#050c18,#002828,#004040,#006060,#00ffe0
+            dist/snake.svg?color_snake=#5eead4&color_dots=#161616,#123e36,#1d6354,#2e9c85,#5eead4
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3

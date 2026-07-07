@@ -1,0 +1,19 @@
+<svg width="900" height="110" viewBox="0 0 900 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="every commit is a synapse firing">
+<defs>
+<style>
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Liberation Mono',monospace}
+  .travel{animation:travel 7s linear infinite}
+  @keyframes travel{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-1070}}
+</style>
+</defs>
+
+<rect x="0.5" y="0.5" width="899" height="109" rx="16" fill="#0A0A0A" stroke="#1C1C1C"/>
+
+<path d="M48 46 H 236 l 8 -14 l 10 26 l 8 -12 H 476 l 8 -14 l 10 26 l 8 -12 H 716 l 8 -14 l 10 26 l 8 -12 H 852"
+      fill="none" stroke="#1E1E1E" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path class="travel" d="M48 46 H 236 l 8 -14 l 10 26 l 8 -12 H 476 l 8 -14 l 10 26 l 8 -12 H 716 l 8 -14 l 10 26 l 8 -12 H 852"
+      fill="none" stroke="#5EEAD4" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"
+      stroke-dasharray="70 1000" opacity="0.9"/>
+
+<text class="mono" x="450" y="86" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#4F4F4F">// every commit is a synapse firing — keep training</text>
+</svg>
